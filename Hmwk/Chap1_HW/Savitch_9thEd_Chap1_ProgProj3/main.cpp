@@ -18,9 +18,9 @@ using namespace std;
 int main(void) 
 {
    //Declare Variables
-    int quart; //Quarters
-    int nicl; //Nickels
-    int dime; //Dimes
+    short quart; //Quarters
+    short nicl; //Nickels
+    short dime; //Dimes
     int total;
     
     //Prompt user for input

@@ -24,14 +24,14 @@ int main(void)
     cout<<"Enter any character "<<endl;
     cin>>X;
     cout<<""<<endl;
-    cout<< "  " << X << X << X <<endl;
-    cout<< " " << X <<"   "<< X <<endl;
+    cout<< "  " << X << X << X << X <<endl;
+    cout<< " " << X <<"    "<< X <<endl;
     cout<< X <<endl;
     cout<< X <<endl;
     cout<< X <<endl;
     cout<< X <<endl;
     cout<< X <<endl;
-    cout<< " " << X << "   "  << X <<endl;
-     cout<< "  "<< X << X << X <<endl;
+    cout<< " " << X << "    "  << X <<endl;
+    cout<< "  "<< X << X << X << X <<endl;
     return 0;
 }
