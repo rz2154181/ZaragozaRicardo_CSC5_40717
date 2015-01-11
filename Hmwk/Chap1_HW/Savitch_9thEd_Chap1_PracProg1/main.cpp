@@ -7,15 +7,29 @@
 
 #include <iostream>
 using namespace std;
+
+//User Libraries
+
+//Global Constants
+
+//Function Prototypes
+
+//Execution Begins Here!
 int main()
 {
-    int number_of_pods, peas_per_pod, total_peas;
+    //Initialize variables
+    short number_of_pods,//number of pods
+        peas_per_pod,//number of peas per pod
+        total_peas;//total number of peas
+    //Prompt user for input
     cout << "press return after entering a number.\n";
     cout << "Enter the number of pods:\n";
-    cin >> number_of_pods;
+    cin >> number_of_pods;// enter number of pods
     cout << "Enter the number of peas in a pod:\n";
-    cin >> peas_per_pod;
+    cin >> peas_per_pod;//enter number of peas per pod
+    //calculate total number of peas
     total_peas=number_of_pods * peas_per_pod;
+   //display the finall output
     cout << "If you have ";
     cout << number_of_pods;
     cout << " pea pods\n";
