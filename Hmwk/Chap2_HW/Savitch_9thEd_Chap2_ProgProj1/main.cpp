@@ -19,13 +19,15 @@ using namespace std;
 //Execution Begins Here!
 int main(int argc, char** argv) {
     //define variables
-    unsigned int sodapop=350, //mass of a can of soda
+    float sodapop=350, //mass of a can of soda
             wgtdiet, //weight the dieter will stop at
             lethal=5.0f/35,//lethal dose
+            grmswt,//grams of sweetener allowed
             grmsoda;//grams of soda allowed
-    unsigned int grmdiet; //desired weight in grams
-    const short perSoda=1.0f/10;//percent of sweetener in soda
-    const short grmpnd=45400.0f/100;//conversion gram to pound
+    
+    float grmdiet; //desired weight in grams
+    const float perSoda=1.0f/10;//percent of sweetener in soda
+    const float grmpnd=454.0f/1;//conversion gram to pound
     cout<<"This program will tell you how much diet"<<endl;
     cout<<"soda you can drink without dying."<<endl;
     cout<<"Please enter your weight goal in pounds: "<<endl;
@@ -33,11 +35,11 @@ int main(int argc, char** argv) {
     grmdiet=wgtdiet*grmpnd;
     cout<<"weight in grams "<<grmdiet<<endl;
    
-    grmsoda=grmdiet*lethal/sodapop*perSoda;
+    grmswt=grmdiet*lethal/sodapop*perSoda;
+    grmsoda=grmswt/3.5f;
     cout<<"you can drink "<<grmsoda<<endl;
     
    
     
     return 0;
 }
-
